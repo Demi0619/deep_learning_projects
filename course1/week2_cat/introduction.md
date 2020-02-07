@@ -7,3 +7,32 @@ This project is to identify an image as cat or non-cat with logistic regerssion.
 ![](datasets/LR.png)
 
 with only 1 layer -- the output layer, and only 1 unit in that layer.
+## Construct the model
+### Initiate the parameters
+weights W with shape (1,n_x). n_x is the dimension[0] of input X, equals to n_h*n_w*n_c.
+bias b is a scalar.
+### In num_iterations do Propagation and update parameters
+#### Forward prpagation
+```
+input X
+
+Z = W.T*X
+
+Y_hat = A = sigmoid(Z)
+```
+#### Compute cost
+`J = (-1/m)*sum(Y*log(A)+(1-Y)*log(1-A))`
+#### Backward propogation
+```
+dZ = A-Y
+
+dW = (1/m)*(dZ*X.T)
+
+db = (1/m)*sum(dZ)
+```
+#### Update parameters
+```
+W := W - learning_rate * dW
+
+b := b - learning_rate *db
+```
