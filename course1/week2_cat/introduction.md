@@ -38,5 +38,5 @@ b := b - learning_rate *db
 ```
 ## Train and evaluate the model 
 - Train the model with preprocessed dataset
-- with the trained model (optimized parameters) and train_set_X to predict Y_hat_train, compared with ground truth Y_train to get ** train accuracy** of this model.
-- with the trained model (optimized parameters) and test_set_X to predict Y_hat_test, compared with ground truth Y_test to get ** test accuracy** of this model.
+- with the trained model (optimized parameters) and train_set_X to predict Y_hat_train, compared with ground truth Y_train to get **train accuracy** of this model.
+- with the trained model (optimized parameters) and test_set_X to predict Y_hat_test, compared with ground truth Y_test to get **test accuracy** of this model.
